@@ -4,7 +4,7 @@ console.log('im alive');
 // Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 
 // creazione array (lista di chi può accedere)* e prompt per inserire la mail
-let request=prompt('Inserisci la tua e-mail');
+let request = prompt('Inserisci la tua e-mail');
 const users = [
     'sunnyday123@example.com',
     'bluebird.music@mail.com',
@@ -19,16 +19,18 @@ const users = [
 ];
 
 // assegnazione di un metodo ad una nuova variabile
-let userRequest=request.length;
+let userRequest = request.length;
 
 // creazione di un loop per cercare in tutto l'array e verificare se l'user sia nella lista
 for (let i = 0; i < userRequest; i++) {
     if (request == users[i]) {
         alert('Sei nella lista');
     }
-    else {
-        alert('Non sei nella lista');
-    }
+    continue
+}
+
+if (users.indexOf() == -1) {
+    alert('Non sei nella lista');
 }
 
 // Gioco dei dadi
@@ -42,8 +44,8 @@ let human;
 let pc;
 
 // uso del metodo Math.floor e Math.random per rendere numeri interi
-human=Math.floor(Math.random() * 6) + 1;
-pc=Math.floor(Math.random() * 6) + 1;
+human = Math.floor(Math.random() * 6) + 1;
+pc = Math.floor(Math.random() * 6) + 1;
 console.log(human, pc);
 
 if (human > pc) {
