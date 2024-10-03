@@ -22,7 +22,7 @@ const users = [
 let check = users.includes(request);
 console.log(check);
 
-// OPPURE: tornare al metodo .includes()
+// creazione di if statement per mostrare all'utente se si è nella lista
 if (check == true) {
     alert('Sei nella lista');
 }
