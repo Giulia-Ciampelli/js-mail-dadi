@@ -39,6 +39,6 @@ let human;
 let pc;
 
 // uso del metodo Math.floor e Math.random per rendere numeri interi
-human=Math.floor(Math.random() * 7);
-pc=Math.floor(Math.random() * 7);
+human=Math.floor(Math.random() * 7) + 1;
+pc=Math.floor(Math.random() * 7) + 1;
 console.log(human, pc);
