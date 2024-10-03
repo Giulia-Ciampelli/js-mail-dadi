@@ -5,7 +5,7 @@ console.log('im alive');
 
 // creazione array (lista di chi può accedere)* e prompt per inserire la mail
 let request=prompt('Inserisci la tua e-mail');
-let users = [
+const users = [
     'sunnyday123@example.com',
     'bluebird.music@mail.com',
     'techguy88@domain.com',
@@ -18,16 +18,17 @@ let users = [
     'coffeeenthusiast@domain.org'
 ];
 
-// assegnazione alla variabile request per cercare l'indice nell'array
-userRequest=request.includes(users);
-console.log(userRequest);
+// assegnazione di un metodo ad una nuova variabile
+let userRequest=request.length;
 
-// creazione if statement per verificare se l'user sia nella lista
-if (userRequest = true) {
-    alert('Accesso approvato');
-}
-else if (userRequest = false) {
-    alert('Accesso negato');
+// creazione di un loop per cercare in tutto l'array e verificare se l'user sia nella lista
+for (let i = 0; i < userRequest; i++) {
+    if (request == users[i]) {
+        alert('Sei nella lista!');
+    }
+    else {
+        alert('Non sei nella lista!');
+    }
 }
 
 // Gioco dei dadi
