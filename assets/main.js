@@ -15,14 +15,20 @@ let users = [
     'artfanatic@email.com',
     'gamerpro2023@site.com',
     'naturephotographer@web.com',
-    'coffeeenthusiast@domain.org',
+    'coffeeenthusiast@domain.org'
 ];
 
 // assegnazione alla variabile request per cercare l'indice nell'array
-request=users.indexOf();
+userRequest=request.includes(users);
+console.log(userRequest);
 
 // creazione if statement per verificare se l'user sia nella lista
-
+if (userRequest = true) {
+    alert('Accesso approvato');
+}
+else if (userRequest = false) {
+    alert('Accesso negato');
+}
 
 // Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
