@@ -18,14 +18,33 @@ const users = [
     'coffeeenthusiast@domain.org'
 ];
 
-// creazione di una variabile con un metodo che controlli se il prompt contiene una stringa dell'array
-let check = users.includes(request);
-console.log(check);
+// // creazione di una variabile con un metodo che controlli se il prompt contiene una stringa dell'array
+// let check = users.includes(request);
+// console.log(check);
 
-// creazione di if statement per mostrare all'utente se si è nella lista
-if (check == true) {
+// // creazione di if statement per mostrare all'utente se si è nella lista
+// if (check == true) {
+//     alert('Sei nella lista');
+// }
+// else {
+//     alert('Non sei nella lista');
+// }
+
+// BONUS: ricreazione del programma con loop
+let userRequest = request.length;
+let isOnlist;
+
+// creazione di un loop per cercare in tutto l'array e verificare se l'user sia nella lista
+for (let i = 0; i < userRequest; i++) {
+    if (request == users[i]) {
+        isOnlist = true;
+        continue
+    }
+}
+
+if (isOnlist = true) {
     alert('Sei nella lista');
 }
-else {
+else if (isOnlist = false) {
     alert('Non sei nella lista');
 }
