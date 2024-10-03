@@ -41,7 +41,7 @@ for (let i = 0; i < userRequest; i++) {
     }
 }
 
-if (isOnlist) {
+if (isOnlist == true) {
     alert('Sei nella lista');
 }
 else {
