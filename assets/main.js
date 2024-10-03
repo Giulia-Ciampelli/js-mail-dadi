@@ -3,7 +3,8 @@ console.log('im alive');
 // Mail
 // Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 
-// creazione array (lista di chi può accedere)*
+// creazione array (lista di chi può accedere)* e prompt per inserire la mail
+let request=prompt('Inserisci la tua e-mail');
 let users = [
     'sunnyday123@example.com',
     'bluebird.music@mail.com',
