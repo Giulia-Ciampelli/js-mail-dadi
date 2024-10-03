@@ -42,9 +42,9 @@ for (let i = 0; i < userRequest; i++) {
     }
 }
 
-if (isOnlist = true) {
+if (isOnlist) {
     alert('Sei nella lista');
 }
-else if (isOnlist = false) {
+else {
     alert('Non sei nella lista');
 }
