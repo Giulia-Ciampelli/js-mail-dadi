@@ -26,9 +26,17 @@ for (let i = 0; i < userRequest; i++) {
     if (request == users[i]) {
         alert('Sei nella lista');
     }
-    continue
 }
 
-if (users.indexOf() == -1) {
+if (users.includes(request) == false) {
     alert('Non sei nella lista');
 }
+
+
+// OPPURE: tornare al metodo .includes()
+// if (users.includes(request)) {
+//     alert('Sei nella lista');
+// }
+// else {
+//     alert('Non sei nella lista');
+// }
