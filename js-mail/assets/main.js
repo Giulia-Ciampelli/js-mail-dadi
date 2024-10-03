@@ -38,7 +38,6 @@ let isOnlist;
 for (let i = 0; i < userRequest; i++) {
     if (request == users[i]) {
         isOnlist = true;
-        continue
     }
 }
 
