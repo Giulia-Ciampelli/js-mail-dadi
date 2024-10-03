@@ -37,3 +37,8 @@ for (let i = 0; i < userRequest; i++) {
 // creazione variabili
 let human;
 let pc;
+
+// uso del metodo Math.floor e Math.random per rendere numeri interi
+human=Math.floor(Math.random() * 7);
+pc=Math.floor(Math.random() * 7);
+console.log(human, pc);
