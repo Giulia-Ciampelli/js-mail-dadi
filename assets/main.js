@@ -18,7 +18,11 @@ let users = [
     'coffeeenthusiast@domain.org',
 ];
 
+// assegnazione alla variabile request per cercare l'indice nell'array
+request=users.indexOf();
+
 // creazione if statement per verificare se l'user sia nella lista
+
 
 // Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
