@@ -18,25 +18,14 @@ const users = [
     'coffeeenthusiast@domain.org'
 ];
 
-// assegnazione di un metodo ad una nuova variabile
-let userRequest = request.length;
-
-// creazione di un loop per cercare in tutto l'array e verificare se l'user sia nella lista
-for (let i = 0; i < userRequest; i++) {
-    if (request == users[i]) {
-        alert('Sei nella lista');
-    }
-}
-
-if (users.includes(request) == false) {
-    alert('Non sei nella lista');
-}
-
+// creazione di una variabile con un metodo che controlli se il prompt contiene una stringa dell'array
+let check = users.includes(request);
+console.log(check);
 
 // OPPURE: tornare al metodo .includes()
-// if (users.includes(request)) {
-//     alert('Sei nella lista');
-// }
-// else {
-//     alert('Non sei nella lista');
-// }
+if (check == true) {
+    alert('Sei nella lista');
+}
+else {
+    alert('Non sei nella lista');
+}
